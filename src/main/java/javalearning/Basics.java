@@ -1,6 +1,6 @@
 package javalearning;
 
-public class BasicVariables {
+public class Basics {
     public static void main(String[] args) {
         try {
             int age = 25;
