@@ -10,6 +10,10 @@ public class Inheritence {
 //        System.out.println("Animal classification : " + Animal.classification); //non static Variable cannot access via ClassName
         System.out.println("Habitat Type is accessing via ClassName: :" + Animal.habitat); //Static variable accessing via ClassName
         System.out.println("Habitat Type is accessing via Object: :" + obj.habitat); //Static variable can also be acessed via Obj
+        System.out.println("eat method is accessing via ClassName: :" + Animal.eat());
+        Dog.bark();
+        Dog.eat();
+
 
         System.out.println("Animal type accessing via ClassName: " + Dog.petType);
         System.out.println("Animal type accessing via Object: : " + obj.petType);
@@ -23,8 +27,8 @@ class Animal {
     public static String habitat = "Terrestrial Animals";
     private int lifeSpan = 40;
 
-    public static void eat(){
-        System.out.println("Animal is eating");
+    public static String eat(){
+        return "Animal is eating";
     }
     public void sleep(){
         System.out.println("Animal is sleeping");
