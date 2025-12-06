@@ -176,4 +176,23 @@ class Mobile extends Electronics {
 | Hybrid           | ✔ Yes (interfaces)| Class + Interface |
 
 ---
+## Overloading vs Overriding – Differences
 
+| Feature               | Method Overloading                     | Method Overriding                                  |
+| --------------------- | -------------------------------------- | -------------------------------------------------- |
+| **Definition**        | Same method name, different parameters | Same method signature but redefined in child class |
+| **Where Used**        | Same class                             | Parent–child classes                               |
+| **Polymorphism Type** | Compile-time                           | Runtime                                            |
+| **Parameters**        | Must be different                      | Must be same                                       |
+| **Return Type**       | Can differ                             | Must be same                                       |
+| **Access Modifier**   | Anything                               | Cannot reduce visibility                           |
+| **Use Case**          | Convenience                            | Custom behavior                                    |
+
+## Access Rules in Overriding
+
+| Parent Modifier | Allowed in Child?               |
+| --------------- | ------------------------------- |
+| `public`        | `public` only                   |
+| `protected`     | `protected` or `public`         |
+| default         | default, protected, public      |
+| `private`       | Not inherited → cannot override |
